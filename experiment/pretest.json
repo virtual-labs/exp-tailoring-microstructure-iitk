@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Purpose of annealing is to",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Increase the hardness",
+        "b": "Reduce the cold workability",
+        "c": "Reduce ductility",
+        "d": "Increase the ductility"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -15,16 +15,33 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. Which of the following options below shows an advantage of the heat treatment?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Reduce ductility",
+        "b": "Reduce formability",
+        "c": "Improve machining",
+        "d": "Reduce the cold working ability"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Heat treatment is used to remove the residual stresses.",
+      "answers": {
+        "a": "Full annealing",
+        "b": "Spherodizing annealing",
+        "c": "Stress relief annealing",
+        "d": "Recrystallization annealing"
       },
       "explanations": {
         "a": "Explanation 1  <a href='www.google.com'>here</a>",
@@ -33,6 +50,40 @@
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The hardest microstructure of steel can be produced through heat treatment.",
+      "answers": {
+        "a": "Annealing",
+        "b": "Normalizing",
+        "c": "Quenching ",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5.To avoid segregation during casting and forging, which heat treatment is used?",
+      "answers": {
+        "a": "Annealing",
+        "b": "Normalizing",
+        "c": "Quenching",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
