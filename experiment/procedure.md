@@ -7,7 +7,7 @@
 <b><u>Polishing</u></b><br>
 To reveal the microstructure, polish and etch the samples using the procedure described in Experiment 1 in the first set of labs.<br>
 
-<b><u>Observations under Microscope</u></b> 
-4.	Observe each specimen under an optical microscope.
+<b><u>Observations under Microscope</u></b><br>
+Observe each specimen under an optical microscope.
 
 
