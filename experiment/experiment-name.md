@@ -1,1 +1,1 @@
-## Tailoring Microstructure with various heat treatments (annealing, normalizing, and quenching) 
+## Tailoring microstructure with various heat treatments (annealing, normalizing, and quenching) 
