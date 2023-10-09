@@ -35,4 +35,4 @@ Various information that can be extracted from the TTT diagram includes<br>
 ●	Hardness of transformed products<br>
 <image src="images/Picture1.png"><br><br>
 <image src="images/Picture2.png"><br>
-<b>Figure 1. TTT diagram of different types of steels </b>    
+<b>Figure 2. TTT diagram of different types of steels </b>    
