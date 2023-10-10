@@ -1,4 +1,3 @@
-<b>Procedure of the simulator of the experiment:</b><br>
 <b>Sample Preparation</b><br>
 1.	Annealing of the hypo eutectoid steel specimen by heating the sample to about 910°C temperature and holding the specimen at this temperature for a definite time, followed by furnace cooling to room temperature in the furnace.<br>
 2.	Normalizing of the hypo eutectoid steel specimen by heating the sample to about 910°C temperature and holding it 1hr at this temperature for homogeneous austenitisation followed by cooling to room temperature in air.<br>
