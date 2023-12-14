@@ -1,6 +1,6 @@
 A heat treatment of an alloy involves three basic steps: heating, soaking, and cooling at desired rates. Heat treatments are usually carried out to alter the microstructure of metals and alloys to tune their properties for various applications. Heat treatment can also alter certain manufacturability objectives, such as improving machining, enhancing formability, and restoring ductility after a cold working operation. The method chosen depends on the desired characteristics of the material. Steels are the most widely used engineering material as their properties can be varied widely by employing suitable heat treatment schedules. Figure 1 demonstrates different types of heat treatments.<br>
-<image src= "images/image1.PNG"> <br>
-Figure 1. Temperature range for different types of heat treatments for steel. <br><br>
+<center><image src= "images/image1.PNG"></image></center> <br>
+<center>Figure 1. Temperature range for different types of heat treatments for steel.</center> <br><br>
 <b> Annealing </b> <br>
 Annealing is a heat treatment process generally used to increase the ductility and reduce the hardness of steel to make it more workable (the material can be cold worked for larger strains without fracture) by producing soft, coarse pearlite in steel by austenitizing, then furnace cooling. The process involves the following steps: <br>
 a. Heating the steel above its A<sub>3</sub> temperature, it exists as single-phase austenite.<br>
@@ -35,6 +35,6 @@ The TTT diagram stands for the “time-temperature-transformation” diagram and
 ●	Temperature or time required to start or finish transformation <br>
 ●	Qualitative information about size scale of product <br>
 ●	Hardness of transformed products<br>
-<image src="images/Picture1.png"><br><br>
-<image src="images/Picture2.png"><br><br>
-<b>Figure 2. TTT diagram of different types of steels </b>    
+<center><image src="images/Picture1.png"></image></center><br><br>
+<center><image src="images/Picture2.png"></image></center><br><br>
+<center><b>Figure 2. TTT diagram of different types of steels</center>  </b>   
