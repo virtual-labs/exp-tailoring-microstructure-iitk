@@ -1,3 +1,4 @@
-1.	https://www.phase-trans.msm.cam.ac.uk/2012/Manna/Part2.pdf <br>
-2.	https://link.springer.com/article/10.1007/s11665-020-05420-6 
-
+1. V.Singh, Physical Metallurgy (2016).<br>
+2. Sidney H Avner, Introduction to Physical Metallurgy, Second Edition (2017).<br>
+3. V.Raghavan, Physical Metallurgy: Principles and Practices, Third Edition (2006). <br>
+4. William D. Callister, David G. Rethwisch, Materials Science and Engineering: An Introduction Tenth Edition (2018). 
