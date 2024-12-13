@@ -11,7 +11,7 @@ Annealing is a heat treatment process generally used to increase the ductility a
 a. Heating the steel above its A<sub>3</sub> temperature, it exists as single-phase austenite.<br>
 b. Keeping the material at the above-mentioned temperature for a definite time to achieve homogenous austenitisation.<br>
 c. Furnace cooling of the material to make it nearly stress-free (by reducing the defects and internal stresses of the material), and the phases reach their equilibrium compositions and phase fractions as per the phase diagram.<br><br> 
-<b>1.1.1 Annealing also comprises different types, which are discussed below:</b><br>
+<b>Annealing also comprises different types, which are discussed below:</b><br>
 
  *	<b>Full annealing</b><br>
 The purpose of this heat treatment is to obtain a material with high ductility. A microstructure with coarse pearlite (i.e., pearlite having high interlamellar spacing) is endowed with such properties. The range of temperatures used is given in the figure below. The steel is heated above A3 (for hypo-eutectoid steels) & A1 (for hyper-eutectoid steels) → (hold), → then the steel is furnace cooled to obtain Coarse Pearlite. Coarse Pearlite has low (↓) Hardness but high (↑) Ductility. The heating is not done above A<sub>cm</sub> for hyper-eutectoid steels to avoid a continuous network of pro-eutectoid cementite along prior Austenite grain boundaries.<br><br> 
