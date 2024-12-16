@@ -4,14 +4,14 @@ Heat Treatment refers to a process of subjecting a metal/alloy to heat with an i
 <center><image src= "images/image1.PNG"></image></center> <br>
 <center>Figure 1. Temperature range for different types of heat treatments for steel.</center> <br><br>
 
-Comment: Since the experiment is about heat treatment, they can be headings and not subheadings<br>
+<!-- Comment: Since the experiment is about heat treatment, they can be headings and not subheadings<br> -->
 
-<b>Annealing </b> <br>
+<b>2. Annealing </b> <br>
 Annealing is a heat treatment process generally used to increase the ductility and reduce the hardness of steel to make it more workable (the material can be cold worked for larger strains without fracture) by producing soft, coarse pearlite in steel by austenitizing, then furnace cooling. The process involves the following steps: <br>
 a. Heating the steel above its A<sub>3</sub> temperature, it exists as single-phase austenite.<br>
 b. Keeping the material at the above-mentioned temperature for a definite time to achieve homogenous austenitisation.<br>
 c. Furnace cooling of the material to make it nearly stress-free (by reducing the defects and internal stresses of the material), and the phases reach their equilibrium compositions and phase fractions as per the phase diagram.<br><br> 
-<b>Annealing also comprises different types, which are discussed below:</b><br>
+Annealing also comprises different types, which are discussed below: <br>
 
  *	<b>Full annealing</b><br>
 The purpose of this heat treatment is to obtain a material with high ductility. A microstructure with coarse pearlite (i.e., pearlite having high interlamellar spacing) is endowed with such properties. The range of temperatures used is given in the figure below. The steel is heated above A3 (for hypo-eutectoid steels) & A1 (for hyper-eutectoid steels) → (hold), → then the steel is furnace cooled to obtain Coarse Pearlite. Coarse Pearlite has low (↓) Hardness but high (↑) Ductility. The heating is not done above A<sub>cm</sub> for hyper-eutectoid steels to avoid a continuous network of pro-eutectoid cementite along prior Austenite grain boundaries.<br><br> 
@@ -22,21 +22,21 @@ Due to various processes like quenching (differential cooling of surface and int
 * <b> Spheroidization annealing</b><br>  
 This heat treatment given to high-carbon steel requires extensive machining before final hardening & tempering. The main purpose of the treatment is to increase the ductility of the sample. Like stress relief annealing, the treatment is done just below A1. Long-time heating leads cementite plates to form cementite spheroids. The driving force for this (microstructural) transformation is the reduction in interfacial energy. <br><br>
 
-<b>Normalizing</b><br>
+<b>3. Normalizing</b><br>
 Normalizing is a heat-treatment process often used to provide grain size and composition uniformity throughout bulk material. It is a simple heat treatment obtained by austenitizing and air cooling to produce a fine pearlitic structure. Fine pearlite has a reasonably good hardness and ductility. The process involves the following steps:<br> 
 * Heating the steel to above its A3 temperature.<br> 
 * Keeping the steel at the above-mentioned temperature for a definite time to achieve homogenous austenitisation.<br>
 * Cooling the material in air (termed air-cooling) to get uniform and relatively fine-grained distribution.<br> 
 In hypo-eutectoid steels normalizing is done 50° C above the annealing temperature. In hyper-eutectoid steels normalizing done above A<sub>cm</sub> → due to faster cooling cementite does not form a continuous film along grain boundaries. Normalizing produces higher amount of pearlite than annealing in a steel of same carbon content. Normalizing gives harder and stronger steel, but with less ductility for the same composition than full annealing. It also reduces the segregation in the castings and forgings. <br> <br>
 
-<b>Hardening and quenching</b><br> 
+<b>4. Hardening and quenching</b><br> 
 Hardening process often results in an increase in the level of hardness, producing a stronger material. The process involves the following steps:<br>
 * Heating the steel to above its A<sub>3</sub> temperature.<br> 
 * Keeping the steel at the above-mentioned temperature for a definite time to achieve homogenous austenitization.<br>
 * Quenching the steel in water or oil causes the soft initial material to transform into a much harder, stronger structure (martensite). The Martensite produced is hard and brittle, and the tempering operation usually follows hardening. This gives a good combination of strength and toughness.<br>
 Often, the hardened material is very brittle and cannot be used without tempering to improve its toughness.<br> <br>
 
-<b>TTT Diagram</b><br>
+<b>5. TTT Diagram</b><br>
 The TTT diagram stands for the “time-temperature-transformation” diagram and is known as the isothermal transformation diagram, which provides important details related to the kinetics of isothermal transformations. Davenport and Bain were the first to develop the TTT diagrams for the eutectoid steels, which were modified later by Cohen. Salt bath techniques following dilatometry, electrical resistivity method, magnetic permeability method, in-situ X-ray and neutron diffractions, acoustic emission, thermal measurement techniques, and density measurement techniques are some known methods for obtaining the TTT diagrams for different types of steels. Among all of them, the salt bath is the most common and well-established method for determining the TTT curves for steels. Figure 1 shows different TTT diagrams for hypoeutectoid, eutectoid, and hyper-eutectoid steels. Austenite transformation is plotted against temperature vs. time on a logarithm scale to obtain the TTT diagram. The shape of the diagram looks like either S or C. Usually, for hypo eutectoid steels, heat treatment is started from the temperature between A<sub>1</sub> and A<sub>3</sub> temperatures (A<sub>1</sub> and A<sub>3</sub> are the intercritical temperatures). Coarse pearlitic microstructure forms closer to A1 due to low nucleation rate and higher growth rates, whereas at higher cooling or lower temperatures fine pearlite results and very fine pearlite results at the nose of the TTT curves. Close to the eutectoid temperature, the undercooling is low, so the driving force for the transformation is small. However, as the undercooling increases, transformation accelerates until the maximum rate is obtained at the “nose” of the curve. Below this temperature, the driving force for transformation continues to increase, but the reaction is now impeded by slow diffusion. This is why the TTT curve takes on a “C” shape with the most rapid overall transformation at some intermediate temperature. After cooling from the austenite and holding the sample below the TTT curve for a sufficient time causes the bainitic transformation within the sample to forms a bainite phase. Bainite is also found in two different types: upper bainite and lower bainite. Upper bainite forms at higher temperatures and closer to the nose of the TTT curve, whereas lower bainite forms at lower temperatures but above Ms temperatures. Cooling the metastable austenitic phase sufficiently faster allows the formation of the martensite phase via athermal transformations (time-independent transformation). This temperature is denoted as M<sub>s</sub> temperature or martensite start temperature.    Below M<sub>s</sub>, while metastable austenite is quenched at different temperatures amount of martensite increases with decreasing temperature and does not change with time. The temperature at which 99% martensite forms is called martensite finish temperature or M<sub>F</sub>.<br> 
 
 <b>Various information that can be extracted from the TTT diagram includes</b><br>
