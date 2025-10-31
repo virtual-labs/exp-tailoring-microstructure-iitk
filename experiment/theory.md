@@ -46,6 +46,6 @@ The TTT diagram stands for the “time-temperature-transformation” diagram and
 ●	Temperature or time required to start or finish transformation <br>
 ●	Qualitative information about size scale of product <br>
 ●	Hardness of transformed products<br>
-<center><image src="images/Picture1.png"></image></center><br><br>
+<center><image src="images/Picture11.png"></image></center><br><br>
 <center><image src="images/Picture2.png"></image></center><br><br>
 <center><b>Figure 2. TTT diagram of different types of steels</center>  </b>   
