@@ -55,9 +55,9 @@
     {
       "question": "4. The main effect of quenching on steel is to:",
       "answers": {
-        "a": "ncrease ductility and reduce hardness",
+        "a": "Increase ductility and reduce hardness",
         "b": "Produce a uniform grain structure",
-        "c": "ncrease hardness by forming martensite",
+        "c": "Increase hardness by forming martensite",
         "d": "Remove carbon from the surface"
       },
       "explanations": {
@@ -87,7 +87,7 @@
     {
       "question": "6. What is the primary purpose of annealing in metals?",
       "answers": {
-        "a": "ncrease hardness and strength rapidly",
+        "a": "Increase hardness and strength rapidly",
         "b": "Relieve internal stresses and soften the material",
         "c": "Convert austenite to martensite",
         "d": "Introduce surface oxide layer"
