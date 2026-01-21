@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Simulator 1</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+        .text {
+            background-color: yellow;
+            border-radius: 21px;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 10px;
+        }
+
+        .options-container {
+            display: none;
+            flex-direction: column;
+            align-items: stretch;
+            margin-top: 20px;
+        }
+
+        .sample-text {
+            border-radius: 5px;
+            padding: 5px;
+            background-color: rgba(243, 243, 123, 0.655);
+        }
+
+        .experiment-image {
+            display: none;
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
+        .graph-images {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .polishing {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            margin-top: 90px;
+        }
+
+        /* Added style for random images container */
+        #final-images {
+            display: none;
+        }
+
+        .finalimages {
+            cursor: pointer;
+            width: 100%;
+            height: auto;
+        }
+
+        .button-center {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+
+        #optical-microscope-image {
+            display: none;
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+        }
+
+
+
+
+        /* Define styles for button hover and focus states (optional) */
+        .btn.btn-success:hover,
+        .btn.btn-success:visited {
+            background-color: #ffeb3b;
+            /* Change color on hover or focus for a subtle effect */
+            border-color: #ffeb3b;
+            /* Change border color on hover or focus */
+            color: black;
+            /* Change text color for better visibility */
+        }
+
+        .yellow-bg {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button type="button" class="btn btn-outline-info mx-2 my-2"><a href="index.html"> Go to the main page</a></button>
+    <button type="button" class="btn btn-outline-info m-3"><a href="index.html">Back </a></button>
+    <button type="button" class="btn btn-outline-info m-3"><a href="Simulator2.html">Next </a></button>
+        <h2 class="d-flex justify-content-center align-items-center"> Simulator 1 </h2>
+        <p class="d-flex justify-content-center align-items-center text">Tailoring and learning the microstructures via heat
+            treatment for steels</p>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Sample  -->
+            <div class="col-md-2 center-content ">
+                <p class="sample-text">Start the simulator by clicking the "Sample"</p>
+                <button type="button" class="btn btn-danger m-2" onclick="showOptions()">Sample</button>
+            </div>
+
+            <!-- Action with sample  -->
+            <div class="col-md-2 center-content">
+                <div class="options-container" id="options-container">
+                    <label class="sample-text">What type of heat treatment you want to perform with the sample ?</label>
+                    <!-- Annealing button -->
+                    <button class="btn btn btn-success m-2"
+                        onclick="processSample('Annealing'); changeColor(this);">Annealing</button>
+
+                    <!-- Normalizing button -->
+                    <button class="btn btn btn-success m-2"
+                        onclick="processSample('Normalizing'); changeColor(this);">Normalizing</button>
+
+                    <!-- Quenching button -->
+                    <button class="btn btn btn-success m-2"
+                        onclick="processSample('Quenching'); changeColor(this);">Quenching</button>
+
+                    <!-- <button class="btn btn btn-success m-2" onclick="processSample('Annealing')">Annealing</button>
+                    <button class="btn btn btn-success m-2" onclick="processSample('Normalizing')">Normalizing</button>
+                    <button class="btn btn btn-success m-2" onclick="processSample('Quenching')">Quenching</button> -->
+                </div>
+            </div>
+
+            <!-- Graph image of sample -->
+            <div class="col-md-4 polishing">
+                <!-- Processing maching images  -->
+                <img src="./images/FurnceMachine.gif" alt="sample processing in machine" id="processing-image1"
+                    style="display:none" />
+                <img src="./images/FurnceMachine1.gif" alt="sample processing in machine" id="processing-image2"
+                    style="display:none" />
+
+                <!--  Graph image  -->
+                <img src="./images/Experiment 9-Simulator 1.gif" alt=" FurnaceAnealingGraph" class="experiment-image"
+                    id="annealing-image" />
+                <img src="./images/Experiment 9-Simulator 1-2.gif" alt=" FurnaceNormalizingGraph"
+                    class="experiment-image" id="normalizing-image" />
+                <img src="./images/Experiment 9-Simulator 1-3.gif" alt=" FurnaceQuenchingGraph" class="experiment-image"
+                    id="quenching-image" />
+
+
+                <!--   heat treatment completed  -->
+                <p id="heat-treatment-completed" class="sample-text"
+                    style="display:none; margin-bottom:0; font-size: 18px;">Heat treatment
+                    process is completed</p>
+
+            </div>
+            <!-- Random Images Container -->
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-3  button-center">
+                        <!-- button  -->
+                        <!-- Polish button -->
+                        <button type="button" class="btn btn-outline-info m-1" id="Polishing-button"
+                            style="display: none;" onclick="processStep(0)">Polishing</button>
+
+                        <!-- Etch button -->
+                        <button type="button" class="btn btn-outline-info m-1 " id="Etching-button"
+                            style="display: none;" onclick="processStep(1)">Etching</button>
+
+                        <!-- Optical Microscope button -->
+                        <button type="button" class="btn btn-outline-info m-1" id="Optical-microscope-button"
+                            style="display: none;" onclick="processStep(2)">Optical microscope</button>
+
+
+                        <!-- optical microscope image -->
+                        <img src="./images/PolishEtch.png" alt="optical microscope" id="optical-microscope-image" />
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="final-images" class="mt-3">
+                            <p class="sample-text"> Please select the correct image for the action you have
+                                performed
+                            </p>
+                            <div class="row">
+                                <!-- Display three images here -->
+                                <div class="col-md-12">
+                                    <img src="" alt="Random Image 1" id="random-image-1"
+                                        onclick="handleImageSelection('random-image-1')" class="finalimages">
+                                </div>
+                               
+                                <div class="col-md-12">
+                                    <img src="" alt="Random Image 3" id="random-image-3"
+                                        onclick="handleImageSelection('random-image-3')" class="finalimages">
+                                </div>
+                                <div class="col-md-12">
+                                    <img src="" alt="Random Image 2" id="random-image-2"
+                                        onclick="handleImageSelection('random-image-2')" class="finalimages">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!--  Show Details button  -->
+                        <button type="button" class="btn btn-outline-info m-2" id="show-details-button"
+                            style="display: none;" onclick="showDetails()">Show Details</button>
+                        <!--  Reset Details button  -->
+                        <button type="button" class="btn btn-danger m-2" id="reset-details-button"
+                            style="display: none;" onclick="location.reload()">Reset </button>
+
+                        <span id="image-details-modal" style="display: none;">
+                            <!-- Details about the selected option -->
+                            <span id="image-details-content">Details will be displayed here.</span>
+                        </span>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+    <!-- Modal for displaying Correct message -->
+    <div class="modal fade" id="correct-modal" tabindex="-1" role="dialog" aria-labelledby="correct-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Your choice is correct!</p>
+                    <!-- <button type="button" class="btn btn-outline-info" onclick="showDetails()">Show Details</button> -->
+                    <!-- <p id="image-details-content">Details will be displayed here.</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for displaying Incorrect message -->
+    <div class="modal fade" id="incorrect-modal" tabindex="-1" role="dialog" aria-labelledby="incorrect-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Your choice is incorrect.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var selectedOption = '';
+
+        function showOptions() {
+            document.getElementById("options-container").style.display = "flex";
+        }
+
+        function changeColor(button) {
+            // Remove the yellow background from all buttons with the class 'btn-success'
+            var buttons = document.querySelectorAll('.btn-success');
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove('yellow-bg');
+            }
+
+            // Add the yellow background to the clicked button
+            button.classList.add('yellow-bg');
+        }
+
+
+        function processSample(option) {
+
+            // Reset the previously selected option and hide the previous image and "Polish Etch" button
+            if (selectedOption) {
+                var previousImageId = selectedOption.toLowerCase() + "-image";
+                document.getElementById(previousImageId).style.display = "none";
+                document.getElementById("heat-treatment-completed").style.display = "none";
+
+                document.getElementById("Polishing-button").style.display = "none";
+                document.getElementById("Etching-button").style.display = "none";
+                document.getElementById("Optical-microscope-button").style.display = "none";
+                document.getElementById("optical-microscope-image").style.display = "none";
+                document.getElementById("final-images").style.display = "none";
+                document.getElementById("show-details-button").style.display = "none";
+                document.getElementById("reset-details-button").style.display = "none";
+                document.getElementById("image-details-modal").style.display = "none";
+
+                // reset buttons background color
+                // document.getElementById("Polishing-button").classList.remove('yellow-bg');
+                // document.getElementById("Etching-button").classList.remove('yellow-bg');
+                // document.getElementById("Optical-microscope-button").classList.remove('yellow-bg');
+
+
+                // Reset to the original background color
+                // document.getElementById("Polishing-button").style.backgroundColor = "initial"; 
+                // document.getElementById("Etching-button").style.backgroundColor = "initial";
+                // document.getElementById("Optical-microscope-button").style.backgroundColor = "initial";
+
+
+                //  Hide processing image 1 
+                document.getElementById("processing-image1").style.display = "none";
+                //  Hide processing image 2 
+                document.getElementById("processing-image2").style.display = "none";
+            }
+
+            selectedOption = option;
+
+            // Show processing images 1 first time gif 
+            document.getElementById("processing-image1").style.display = "block";
+
+            // Show the relevant image and "Polish Etch" button
+            var imageId = option.toLowerCase() + "-image";
+            console.log("graph processing imgae id =", imageId)
+            document.getElementById(imageId).style.display = "block";
+
+            // Simulate processing delay (12 seconds)
+            setTimeout(function () {
+                //  Show button after graph completed 
+                document.getElementById("Polishing-button").style.display = "block";
+                document.getElementById("Etching-button").style.display = "block";
+                document.getElementById("Optical-microscope-button").style.display = "block";
+
+                //  Hide processing image 1  
+                document.getElementById("processing-image1").style.display = "none";
+                // Showing second processing images 
+                document.getElementById("processing-image2").style.display = "block";
+                // Show heat treatment completed 
+                document.getElementById("heat-treatment-completed").style.display = "block";
+
+                // Show final heat processinbg images 
+                var annealingfinalimge = './images/AnnealingFinalImage.PNG'; // Annealing image
+                var normalizingfinalimage = './images/NormalizingFinalImage.PNG'; // Normalizing image
+                var quenchingfinalimage = './images/QuenchingFinalImage.PNG'; // Quenching image
+                if (imageId == 'annealing-image') {
+                    document.getElementById(imageId).src = annealingfinalimge;
+                }
+                if (imageId == 'normalizing-image') {
+                    document.getElementById(imageId).src = normalizingfinalimage;
+                }
+                if (imageId == 'quenching-image') {
+                    document.getElementById(imageId).src = quenchingfinalimage;
+                }
+
+            }, 12000); // 12 seconds delay
+        }
+
+
+
+
+
+        var currentStep = 0;
+        function processStep(step) {
+
+            if (step === currentStep) {
+                // Only allow clicking the current step button
+
+                // Change the background color of the button to yellow
+                document.getElementById(buttonId(step)).classList.add('yellow-bg');
+
+                if (step === 2) {
+                    // When the final step is reached, call your OpticalMicroscope function
+                    OpticalMicroscope();
+                }
+
+                // Increment the current step
+                currentStep++;
+            }
+        }
+
+        function buttonId(step) {
+            // Function to get the button's ID based on the step
+            switch (step) {
+                case 0:
+                    return "Polishing-button";
+                case 1:
+                    return "Etching-button";
+                case 2:
+                    return "Optical-microscope-button";
+                default:
+                    return "";
+            }
+        }
+
+        function OpticalMicroscope() {
+            // Showing microscope image
+            document.getElementById("optical-microscope-image").style.display = "block";
+
+
+            // Simulate preparing images delay (3 seconds)
+            setTimeout(function () {
+                // hide optical microscope image
+                // document.getElementById("optical-microscope-image").style.display = "none";
+
+                // Assign specific images for Annealing, Normalizing, and Quenching
+                var randomImage1 = './images/AnnealingGraph.png'; // Annealing image
+                var randomImage2 = './images/NormalizingGraph.png'; // Normalizing image
+                var randomImage3 = './images/QuenchingGraph.png'; // Quenching image
+
+                document.getElementById("random-image-1").src = randomImage1;
+                document.getElementById("random-image-2").src = randomImage2;
+                document.getElementById("random-image-3").src = randomImage3;
+
+                // hide the "Show Details" button
+                document.getElementById("show-details-button").style.display = "none";
+                document.getElementById("reset-details-button").style.display = "none";
+
+                // Show the random images container
+                document.getElementById("final-images").style.display = "block";
+            }, 2000); // 2 seconds delay then show three random images 
+        }
+
+        function handleImageSelection(imageId) {
+            // Record the selected image
+            selectedImage = document.getElementById(imageId).id;
+            console.log("selected image =", document.getElementById(imageId).id);
+            console.log("selected option =", selectedOption);
+
+            // Check if the selected image matches the correct image for the chosen option
+            if (
+                (selectedOption === 'Annealing' && selectedImage === 'random-image-1') ||
+                (selectedOption === 'Normalizing' && selectedImage === 'random-image-2') ||
+                (selectedOption === 'Quenching' && selectedImage === 'random-image-3')
+            ) {
+                showCorrectModal();
+                document.getElementById("show-details-button").style.display = "block"; // Make the "Show Details" button visible
+                document.getElementById("reset-details-button").style.display = "block"; // Make the "Show Details" button visible
+            } else {
+                // Show the incorrect modal if the selected image is incorrect
+                $('#incorrect-modal').modal('show');
+            }
+        }
+
+        function showCorrectModal() {
+            // Show the correct modal
+            $('#correct-modal').modal('show');
+        }
+
+        function showDetails() {
+            // Close the correct modal if it's open
+            $('#correct-modal').modal('hide');
+
+            // Display specific details for Annealing, Normalizing, or Quenching based on the selected action
+            var detailsModal = document.getElementById("image-details-modal");
+            var modalContent = document.getElementById("image-details-content");
+
+            if (selectedOption === 'Annealing') {
+                modalContent.innerHTML = "Annealing gives coarse pearlite due to sufficient diffusion. <br><b>Applications:</b> Metal fabricators, bars, billets, tubes";
+            } else if (selectedOption === 'Normalizing') {
+                modalContent.innerHTML = "Normalizing gives fine pearlite due to sufficient diffusion. <br><b>Applications:</b> Piano wires, increase machinability of metal parts in automotive industries ";
+            } else if (selectedOption === 'Quenching') {
+                modalContent.innerHTML = "Quenching gives martensite  via diffusion-less transformation. <br><b>Applications:</b> Truck moving liners, earthmoving buckets, cutting tools, storage tanks ";
+            }
+
+            // Show the modal
+            detailsModal.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

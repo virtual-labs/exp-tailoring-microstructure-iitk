@@ -1,0 +1,90 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Purpose of annealing is to",
+      "answers": {
+        "a": "Increase the hardness",
+        "b": "Reduce the cold workability",
+        "c": "Reduce ductility",
+        "d": "Increase the ductility"
+      },
+      "explanations": {
+        "a": " This is an incorrect option. Annealing softens the material by relieving internal stresses, so hardness decreases.",
+        "b": "This is an incorrect option. Annealing actually improves cold workability by restoring ductility.",
+        "c": "This is an incorrect option. Ductility is increased, not reduced, during annealing. ",
+        "d": "This is the correct option. Annealing promotes recovery, recrystallization, and grain growth, which increase ductility."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following options below shows an advantage of the heat treatment?",
+      "answers": {
+        "a": "Reduce ductility",
+        "b": "Reduce formability",
+        "c": "Improve machining",
+        "d": "Reduce the cold working ability"
+      },
+      "explanations": {
+        "a": "This is an incorrect option.  Reducing ductility is a disadvantage, not an advantage, of heat treatment.",
+        "b": "This is an incorrect option. Heat treatment generally improves formability by relieving stresses and softening the material.",
+        "c": "This is the correct option. Heat treatment can adjust hardness and microstructure to make machining easier.",
+        "d": "This is an incorrect option. Heat treatment typically enhances, not reduces, cold working ability."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Heat treatment is used to remove the residual stresses.",
+      "answers": {
+        "a": "Full annealing",
+        "b": "Spherodizing annealing",
+        "c": "Stress relief annealing",
+        "d": "Recrystallization annealing"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Used to soften the material and refine grain structure, not primarily for removing residual stresses.",
+        "b": "This is an incorrect option. Used to form spherical carbides to improve machinability, rather than to relieve residual stresses.",
+        "c": "This is the correct option. Specifically performed to remove residual stresses without causing significant microstructural changes.",
+        "d": "This is an incorrect option. Removes effects of cold work by forming new strain-free grains, not solely intended for residual stress removal."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. The hardest microstructure of steel can be produced through heat treatment.",
+      "answers": {
+        "a": "Annealing",
+        "b": "Normalizing",
+        "c": "Quenching ",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "This is an incorrect option. Annealing produces a soft, coarse microstructure, not the hardest one.",
+        "b": "This is an incorrect option. Normalizing refines grains and increases strength but does not produce the hardest microstructure.",
+        "c": "This is the correct option. Quenching forms martensite, which is the hardest microstructure in steel.",
+        "d": "Incorrect, since only quenching produces the hardest microstructure."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5.To avoid segregation during casting and forging, which heat treatment is used?",
+      "answers": {
+        "a": "Annealing",
+        "b": "Normalizing",
+        "c": "Quenching",
+        "d": "All the above"
+      },
+      "explanations": {
+        "a": "This is the correct option. Homogenization annealing reduces chemical segregation formed during casting and forging by diffusion at high temperature.",
+        "b": "This is an incorrect option. Normalizing refines grain structure but does not effectively eliminate segregation.",
+        "c": "This is an incorrect option. Quenching locks in microstructure and does not reduce segregation.",
+        "d": "Incorrect, since only annealing is used to reduce segregation."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}

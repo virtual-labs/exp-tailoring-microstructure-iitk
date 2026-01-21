@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Simulator 2</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .text {
+            background-color: yellow;
+            border-radius: 21px;
+            font-size: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 10px;
+        }
+
+        .graph-content {
+            font-size: 20px;
+            background-color: rgb(243, 243, 123);
+        }
+
+        .container {
+            max-width: 100%;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        /* .col-md-6 {
+            width: 50%;
+            padding: 0;
+        } */
+
+        #graphImage {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .microscope {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .modal-dialog {
+            max-width: 500px;
+            /* Adjust the modal width as per your requirement */
+        }
+
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* margin-top: 115px; */
+        }
+
+        .microscope-images {
+            width: 230px;
+            height: 230px;
+            margin: 3px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-name {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .img-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+    </style>
+
+
+
+    <!-- JavaScript to handle the quiz -->
+    <script>
+        // Define an array of points and initialize the current point index to 0
+        const points = ['Heat treatment 1', 'Heat treatment 2', 'Heat treatment 3', 'Heat treatment 4', 'Heat treatment 5'];
+        let currentPointIndex = 0;
+
+        // Function to show the instruction for the current point
+        function showInstructionForCurrentPoint() {
+            const graphContent = document.querySelector('.graph-content');
+            if (currentPointIndex < points.length) {
+                graphContent.textContent = `Click on image selecting the correct microstructure for ${points[currentPointIndex]}`;
+            } else {
+                graphContent.textContent = 'Quiz Completed';
+            }
+        }
+
+        // Function to handle image click and check the match
+        function matchImage(image) {
+            const matchingResult = document.getElementById('matchingResult');
+            const matchingImage = document.getElementById('matchingImage');
+            const modal = new bootstrap.Modal(document.getElementById('myModal'));
+
+            if (image.dataset.drop === points[currentPointIndex]) {
+                matchingResult.textContent = `Correct match for ${points[currentPointIndex]}`;
+                currentPointIndex++; // Move to the next point
+
+                // Check if all points have been matched, and show quiz completion modal if needed
+                if (currentPointIndex === points.length) {
+                    matchingResult.textContent = 'Congratulations! You have completed the quiz.';
+                    modal.show();
+                    showInstructionForCurrentPoint();
+                } else {
+                    // Show the instruction for the next point
+                    showInstructionForCurrentPoint();
+                }
+            } else {
+                matchingResult.textContent = 'Incorrect, Please match the correct microstructure image with the given heat treatment number.';
+            }
+
+            matchingImage.src = image.src;
+            modal.show();
+        }
+
+        // Call the function to show the instruction for the initial point
+        showInstructionForCurrentPoint();
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <button type="button" class="btn btn-outline-info  mx-2 my-2"><a href="index.html"> Go to main page</a></button>
+    <button type="button" class="btn btn-outline-info  m-3"><a href="Simulator1.html">Back </a></button>
+    <h2 class="d-flex justify-content-center align-items-center"> Simulator 2 </h2>
+    <p class="d-flex justify-content-center align-items-center text">Tailoring and learning the microstructures via heat
+        treatment for steels</p>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="d-flex justify-content-center align-items-center"> TTT diagram </h2>
+                <img src="images/Simulator2.jpg" width="90%" height="auto" alt="" />
+
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h2 class="d-flex justify-content-center align-items-center">Microstructures</h2>
+                <!-- <p class="graph-content">Select the correct microstructure for the point highlighted in the phase diagram.</p> -->
+                <p class="graph-content d-flex justify-content-center align-items-center">Match the correct
+                    microstructure image with the heat treatment number 1 </p>
+                <div class="right-side">
+                    <div class="microscope  row">
+                        <div class="col-md-4 col-sm-12 img-container">
+                            <img class="microscope-images droppable" src="images/Martensite.png" alt="Martensite"
+                                data-drop="Heat treatment 5" data-bs-toggle="modal" data-bs-target="#myModal"
+                                onclick="matchImage(this)">
+                            <p class="image-name"> Martensite</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 img-container">
+                            <img class="microscope-images droppable" src="images/FinePearlite.png" alt="FinePearlite"
+                                data-drop="Heat treatment 2" data-bs-toggle="modal" data-bs-target="#myModal"
+                                onclick="matchImage(this)">
+                            <p class="image-name"> Fine Pearlite</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 img-container">
+                            <img class="microscope-images droppable" src="images/UpperPearlite.png" alt="UpperPearlite"
+                                data-drop="Heat treatment 3" data-bs-toggle="modal" data-bs-target="#myModal"
+                                onclick="matchImage(this)">
+                            <p class="image-name"> Upper Bainite</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 img-container">
+                            <img class="microscope-images droppable" src="images/CoarsePearlite.png"
+                                alt="CoarsePearlite" data-drop="Heat treatment 1" data-bs-toggle="modal"
+                                data-bs-target="#myModal" onclick="matchImage(this)">
+                            <p class="image-name"> Coarse Pearlite</p>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 img-container">
+                            <img class="microscope-images droppable" src="images/LowerPearlite.png" alt="LowerPearlite"
+                                data-drop="Heat treatment 4" data-bs-toggle="modal" data-bs-target="#myModal"
+                                onclick="matchImage(this)">
+                            <p class="image-name"> Lower Bainite</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Matching Result</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="matchingResult"> Match the correct microstructure image with the given heat treatment number
+                    </p>
+                    <img id="matchingImage" src="" alt="Matching Image" style="max-width: 401px; max-height: 301px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
