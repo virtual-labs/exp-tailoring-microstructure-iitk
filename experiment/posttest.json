@@ -10,10 +10,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option. Annealing produces coarse pearlite due to slow cooling.",
+        "b": "This is the correct option. Normalizing involves air cooling, which produces fine pearlitic microstructure.",
+        "c": "This is an incorrect option. Quenching forms martensite, not pearlite.",
+        "d": "Incorrect, since normalizing produces fine pearlite."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "Time – Temperature – Transition diagram"
       },
       "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option because transition is not the correct term; the diagram describes phase transformation, not transitions. ",
+        "b": "This is the correct option.  A TTT diagram shows the kinetics of phase transformations as a function of time and temperature during isothermal heat treatment. ",
+        "c": "Incorrect because translation has no relevance in phase transformation kinetics.",
+        "d": "Incorrect because the correct term is transformation, not transition, and the standard sequence is Time–Temperature–Transformation."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option because it ignores the effect of other alloying elements and grain size, both of which strongly influence transformation kinetics.",
+        "b": "This is an incorrect option because microstructure is an outcome of the TTT diagram, not an independent variable that determines its shape.",
+        "c": "This is the correct option. The position and shape of a TTT diagram are governed by alloying elements (including carbon content) and austenite grain size, which control transformation kinetics.",
+        "d": "Incorrect since option (c) correctly identifies the key factors governing the TTT diagram."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -61,8 +61,10 @@
         "d": "Remove carbon from the surface"
       },
       "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2"
+        "a": "This is an incorrect option. This is the effect of annealing or tempering, not quenching.",
+        "b": "This is an incorrect option. Grain uniformity is associated with normalizing, not quenching.",
+        "c": "This is the correct option. Quenching rapidly cools steel to form martensite, which is very hard.",
+        "d": "This is an incorrect option. Carbon removal (decarburization) is a surface reaction, not an effect of quenching."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -76,10 +78,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect; martensitic transformation occurs without atomic diffusion.",
+        "b": "Correct because martensite forms by a shear transformation with no long-range diffusion.",
+        "c": "Incorrect, since the transformation cannot be both diffusional and diffusionless.",
+        "d": "Incorrect, because diffusionless correctly describes martensitic transformation."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -93,10 +95,10 @@
         "d": "Introduce surface oxide layer"
       },
       "explanations": {
-        "a": "Explanation 1",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option. This is the purpose of quenching and tempering, not annealing.",
+        "b": "This is the correct option. Annealing allows recovery, recrystallization, and grain growth to reduce hardness and internal stresses.",
+        "c": "This is an incorrect option. This phase transition occurs during quenching, not annealing.",
+        "d": "This is an incorrect option. Oxidation is not the intended purpose of annealing."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
