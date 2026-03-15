@@ -10,10 +10,10 @@
         "d": "Increase the ductility"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": " This is an incorrect option. Annealing softens the material by relieving internal stresses, so hardness decreases.",
+        "b": "This is an incorrect option. Annealing actually improves cold workability by restoring ductility.",
+        "c": "This is an incorrect option. Ductility is increased, not reduced, during annealing. ",
+        "d": "This is the correct option. Annealing promotes recovery, recrystallization, and grain growth, which increase ductility."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -27,12 +27,12 @@
         "d": "Reduce the cold working ability"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option.  Reducing ductility is a disadvantage, not an advantage, of heat treatment.",
+        "b": "This is an incorrect option. Heat treatment generally improves formability by relieving stresses and softening the material.",
+        "c": "This is the correct option. Heat treatment can adjust hardness and microstructure to make machining easier.",
+        "d": "This is an incorrect option. Heat treatment typically enhances, not reduces, cold working ability."
       },
-      "correctAnswer": "d",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -44,10 +44,10 @@
         "d": "Recrystallization annealing"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option. Used to soften the material and refine grain structure, not primarily for removing residual stresses.",
+        "b": "This is an incorrect option. Used to form spherical carbides to improve machinability, rather than to relieve residual stresses.",
+        "c": "This is the correct option. Specifically performed to remove residual stresses without causing significant microstructural changes.",
+        "d": "This is an incorrect option. Removes effects of cold work by forming new strain-free grains, not solely intended for residual stress removal."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "All the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option. Annealing produces a soft, coarse microstructure, not the hardest one.",
+        "b": "This is an incorrect option. Normalizing refines grains and increases strength but does not produce the hardest microstructure.",
+        "c": "This is the correct option. Quenching forms martensite, which is the hardest microstructure in steel.",
+        "d": "Incorrect, since only quenching produces the hardest microstructure."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -78,12 +78,12 @@
         "d": "All the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is the correct option. Homogenization annealing reduces chemical segregation formed during casting and forging by diffusion at high temperature.",
+        "b": "This is an incorrect option. Normalizing refines grain structure but does not effectively eliminate segregation.",
+        "c": "This is an incorrect option. Quenching locks in microstructure and does not reduce segregation.",
+        "d": "Incorrect, since only annealing is used to reduce segregation."
       },
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
